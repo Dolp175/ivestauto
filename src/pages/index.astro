@@ -11,14 +11,27 @@ import Footer from '../components/layout/Footer.astro';
   </Fragment>
 
   <main>
-    <!-- Solo contenido único de esta página -->
-    <section class="min-h-[60vh] flex items-center justify-center">
-      <div class="text-center">
-        <h1 class="text-4xl font-bold mb-4">Página de Prueba</h1>
-        <p class="text-xl text-gray-600 dark:text-gray-400">
-          Layout funcionando correctamente
-        </p>
-      </div>
+        <!-- Hero Section -->
+    <section id="inicio" class="relative bg-gradient-to-b from-slate-800 to-slate-900 text-white">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+            <div class="text-center">
+                <h2 class="text-4xl md:text-6xl font-bold mb-6">
+                    Tu especialista en <span class="text-red-700">4x4</span>
+                </h2>
+                <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                    Accesorios, recambios y vehículos de ocasión. Más de 10 años de experiencia en el sector automotriz.
+                </p>
+                <div class="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
+                    <a href="#servicios" class="inline-block bg-red-700 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-red-800 transition-colors">
+                        Nuestros Servicios
+                    </a>
+                    <a href="#contacto" class="inline-block border-2 border-white text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-white hover:text-gray-900 transition-colors">
+                        Contactar Ahora
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
   </main>
 

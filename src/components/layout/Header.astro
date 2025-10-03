@@ -19,16 +19,16 @@ import MobileNavigation from './MobileNavigation.astro';
           <img 
             src="/logo.png" 
             alt="IVESTAUTO - Repuestos 4x4 y Vehículos de Importación" 
-            class="h-8 w-auto"
+            class="h-8 w-auto hidden [@media(min-width:430px)]:block"
             width="40"
             height="40"
             loading="eager"
           />
           <!-- Texto del logo -->
           <h1 class="text-2xl font-bold">
-            <span class="text-gray-900">IVEST</span>
-            <span class="text-red-700">AUTO</span>
-          </h1>
+            <span class="text-gray-900">IVEST</span><span class="text-red-700">AUTO</span>
+        </h1>
+
         </a>
       </div>
 
