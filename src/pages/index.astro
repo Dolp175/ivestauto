@@ -3,6 +3,8 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/layout/Header.astro';
 import Footer from '../components/layout/Footer.astro';
+import RecambioCard from '../components/ui/RecambioCard.astro';
+import ContactForm from '../components/ui/ContactForm.astro';
 ---
 
 <BaseLayout>
@@ -39,10 +41,10 @@ import Footer from '../components/layout/Footer.astro';
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                    Especialistas en <span class="text-red-700">Vehículos 4x4</span>
+                    Nuestros <span class="text-red-700">Servicios</span>
                 </h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                    Soluciones integrales para amantes de los todoterrenos. Calidad, experiencia y compromiso en cada servicio.
+                    Soluciones integrales para amantes de los todoterrenos. Calidad, experiencia y compromiso en cada servicio. Importación de todo tipo de vehiculos
                 </p>
             </div>
             
@@ -95,7 +97,7 @@ import Footer from '../components/layout/Footer.astro';
                         </div>
                     </div>
                     <div class="pt-12">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-red-700 transition-colors">Recambios Originales</h3>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-red-700 transition-colors">Recambios 4x4</h3>
                         <p class="text-gray-600 leading-relaxed mb-6">
                             Piezas de calidad garantizada para mantener el rendimiento y seguridad de tu vehículo en óptimas condiciones.
                         </p>
@@ -133,9 +135,9 @@ import Footer from '../components/layout/Footer.astro';
                         </div>
                     </div>
                     <div class="pt-12">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-red-700 transition-colors">Compra-Venta</h3>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-red-700 transition-colors">Vehiculos de Ocasión</h3>
                         <p class="text-gray-600 leading-relaxed mb-6">
-                            Vehículos 4x4 y camiones de ocasión seleccionados. Garantía de calidad y transparencia en cada operación.
+                            Vehículos de alta gama y camiones de importación. Garantía de calidad y transparencia en cada operación.
                         </p>
                         <ul class="space-y-2 text-sm text-gray-500">
                             <li class="flex items-center">
@@ -184,16 +186,13 @@ import Footer from '../components/layout/Footer.astro';
         </div>
     </section>
 
-    <!-- Proceso de Compra de Vehículos - Coherente con tu marca -->
+<!-- Proceso de Compra de Vehículos - Colores Actualizados -->
 <section id="proceso-compra" class="py-20 bg-gradient-to-br from-slate-50 to-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
             
             <!-- Columna izquierda - Texto introductorio -->
             <div class="md:sticky md:top-24">
-                <span class="inline-block bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
-                    SERVICIO PERSONALIZADO
-                </span>
                 <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                     Importamos tu vehículo perfecto, 
                     <span class="bg-clip-text text-transparent bg-gradient-to-r from-slate-700 to-red-600">
@@ -256,18 +255,18 @@ import Footer from '../components/layout/Footer.astro';
             <!-- Columna derecha - Acordeón de pasos -->
             <div class="space-y-4">
                 
-                <!-- Paso 1: Requisitos -->
-                <div x-data="{ open: true }" class="border-2 border-slate-200 rounded-xl overflow-hidden transition-all duration-200 hover:shadow-lg hover:border-slate-300">
-                    <button @click="open = !open" class="flex justify-between items-center w-full p-6 text-left bg-gradient-to-r from-slate-50 to-gray-100">
+                <!-- Paso 1: Requisitos - AZUL OSCURO -->
+                <div x-data="{ open: true }" class="border-2 border-blue-700 rounded-xl overflow-hidden transition-all duration-200 hover:shadow-lg hover:border-blue-800">
+                    <button @click="open = !open" class="flex justify-between items-center w-full p-6 text-left bg-gradient-to-br from-slate-800 to-blue-600 text-white">
                         <div class="flex items-center">
-                            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-slate-600 to-slate-800 flex items-center justify-center text-white font-bold mr-4 shadow-lg">
+                            <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-blue-800 font-bold mr-4 shadow-lg">
                                 1
                             </div>
-                            <h3 class="text-xl font-bold text-gray-900">
+                            <h3 class="text-xl font-bold text-white">
                                 Definición de Requisitos
                             </h3>
                         </div>
-                        <svg class="w-6 h-6 text-slate-600 transform transition-transform duration-200" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-6 h-6 text-white transform transition-transform duration-200" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
@@ -275,19 +274,19 @@ import Footer from '../components/layout/Footer.astro';
                         <p class="text-gray-600 mb-4">Cuéntanos exactamente qué buscas y nos ponemos manos a la obra.</p>
                         <ul class="space-y-3 text-gray-600">
                             <li class="flex items-start">
-                                <svg class="w-5 h-5 text-red-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg class="w-5 h-5 text-blue-700 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
                                 </svg>
                                 <span>Marca, modelo y año preferido</span>
                             </li>
                             <li class="flex items-start">
-                                <svg class="w-5 h-5 text-red-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg class="w-5 h-5 text-blue-700 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
                                 </svg>
                                 <span>Presupuesto y condiciones de financiación</span>
                             </li>
                             <li class="flex items-start">
-                                <svg class="w-5 h-5 text-red-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg class="w-5 h-5 text-blue-700 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
                                 </svg>
@@ -297,18 +296,18 @@ import Footer from '../components/layout/Footer.astro';
                     </div>
                 </div>
 
-                <!-- Paso 2: Búsqueda -->
-                <div x-data="{ open: false }" class="border-2 border-red-200 rounded-xl overflow-hidden transition-all duration-200 hover:shadow-lg hover:border-red-300">
-                    <button @click="open = !open" class="flex justify-between items-center w-full p-6 text-left bg-gradient-to-r from-red-50 to-rose-50">
+                <!-- Paso 2: Búsqueda - ROJO OSCURO -->
+                <div x-data="{ open: false }" class="border-2 border-red-700 rounded-xl overflow-hidden transition-all duration-200 hover:shadow-lg hover:border-red-800">
+                    <button @click="open = !open" class="flex justify-between items-center w-full p-6 text-left bg-gradient-to-br from-red-700 to-red-900 text-white">
                         <div class="flex items-center">
-                            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-red-600 to-rose-700 flex items-center justify-center text-white font-bold mr-4 shadow-lg">
+                            <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-red-800 font-bold mr-4 shadow-lg">
                                 2
                             </div>
-                            <h3 class="text-xl font-bold text-gray-900">
+                            <h3 class="text-xl font-bold text-white">
                                 Búsqueda Internacional
                             </h3>
                         </div>
-                        <svg class="w-6 h-6 text-red-600 transform transition-transform duration-200" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-6 h-6 text-white transform transition-transform duration-200" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
@@ -337,18 +336,18 @@ import Footer from '../components/layout/Footer.astro';
                     </div>
                 </div>
 
-                <!-- Paso 3: Propuesta -->
-                <div x-data="{ open: false }" class="border-2 border-slate-200 rounded-xl overflow-hidden transition-all duration-200 hover:shadow-lg hover:border-slate-300">
-                    <button @click="open = !open" class="flex justify-between items-center w-full p-6 text-left bg-gradient-to-r from-slate-50 to-gray-100">
+                <!-- Paso 3: Propuesta - AZUL OSCURO -->
+                <div x-data="{ open: false }" class="border-2 border-blue-700 rounded-xl overflow-hidden transition-all duration-200 hover:shadow-lg hover:border-blue-800">
+                    <button @click="open = !open" class="flex justify-between items-center w-full p-6 text-left bg-gradient-to-br from-slate-800 to-blue-600 text-white">
                         <div class="flex items-center">
-                            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-slate-600 to-slate-800 flex items-center justify-center text-white font-bold mr-4 shadow-lg">
+                            <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-blue-800 font-bold mr-4 shadow-lg">
                                 3
                             </div>
-                            <h3 class="text-xl font-bold text-gray-900">
+                            <h3 class="text-xl font-bold text-white">
                                 Propuesta Personalizada
                             </h3>
                         </div>
-                        <svg class="w-6 h-6 text-slate-600 transform transition-transform duration-200" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-6 h-6 text-white transform transition-transform duration-200" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
@@ -356,19 +355,19 @@ import Footer from '../components/layout/Footer.astro';
                         <p class="text-gray-600 mb-4">Te presentamos las opciones que mejor se ajustan a tus necesidades y presupuesto.</p>
                         <ul class="space-y-3 text-gray-600">
                             <li class="flex items-start">
-                                <svg class="w-5 h-5 text-red-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg class="w-5 h-5 text-blue-700 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                                 </svg>
                                 <span>Ficha completa con fotos reales y estado detallado</span>
                             </li>
                             <li class="flex items-start">
-                                <svg class="w-5 h-5 text-red-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg class="w-5 h-5 text-blue-700 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
                                 </svg>
                                 <span>Desglose transparente de costes: vehículo, transporte, impuestos</span>
                             </li>
                             <li class="flex items-start">
-                                <svg class="w-5 h-5 text-red-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg class="w-5 h-5 text-blue-700 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                                 </svg>
                                 <span>Plazo estimado de entrega a domicilio</span>
@@ -377,18 +376,18 @@ import Footer from '../components/layout/Footer.astro';
                     </div>
                 </div>
 
-                <!-- Paso 4: Importación -->
-                <div x-data="{ open: false }" class="border-2 border-red-200 rounded-xl overflow-hidden transition-all duration-200 hover:shadow-lg hover:border-red-300">
-                    <button @click="open = !open" class="flex justify-between items-center w-full p-6 text-left bg-gradient-to-r from-red-50 to-rose-50">
+                <!-- Paso 4: Importación - ROJO OSCURO -->
+                <div x-data="{ open: false }" class="border-2 border-red-700 rounded-xl overflow-hidden transition-all duration-200 hover:shadow-lg hover:border-red-800">
+                    <button @click="open = !open" class="flex justify-between items-center w-full p-6 text-left bg-gradient-to-br from-red-700 to-red-900 text-white">
                         <div class="flex items-center">
-                            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-red-600 to-rose-700 flex items-center justify-center text-white font-bold mr-4 shadow-lg">
+                            <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-red-800 font-bold mr-4 shadow-lg">
                                 4
                             </div>
-                            <h3 class="text-xl font-bold text-gray-900">
+                            <h3 class="text-xl font-bold text-white">
                                 Importación y Control de Calidad
                             </h3>
                         </div>
-                        <svg class="w-6 h-6 text-red-600 transform transition-transform duration-200" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-6 h-6 text-white transform transition-transform duration-200" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
@@ -417,18 +416,18 @@ import Footer from '../components/layout/Footer.astro';
                     </div>
                 </div>
 
-                <!-- Paso 5: Entrega -->
-                <div x-data="{ open: false }" class="border-2 border-slate-200 rounded-xl overflow-hidden transition-all duration-200 hover:shadow-lg hover:border-slate-300">
-                    <button @click="open = !open" class="flex justify-between items-center w-full p-6 text-left bg-gradient-to-r from-slate-50 to-gray-100">
+                <!-- Paso 5: Entrega - AZUL OSCURO -->
+                <div x-data="{ open: false }" class="border-2 border-blue-700 rounded-xl overflow-hidden transition-all duration-200 hover:shadow-lg hover:border-blue-800">
+                    <button @click="open = !open" class="flex justify-between items-center w-full p-6 text-left bg-gradient-to-br from-slate-800 to-blue-600 text-white">
                         <div class="flex items-center">
-                            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-slate-600 to-slate-800 flex items-center justify-center text-white font-bold mr-4 shadow-lg">
+                            <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-blue-800 font-bold mr-4 shadow-lg">
                                 5
                             </div>
-                            <h3 class="text-xl font-bold text-gray-900">
+                            <h3 class="text-xl font-bold text-white">
                                 Entrega a Domicilio
                             </h3>
                         </div>
-                        <svg class="w-6 h-6 text-slate-600 transform transition-transform duration-200" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-6 h-6 text-white transform transition-transform duration-200" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
@@ -436,19 +435,19 @@ import Footer from '../components/layout/Footer.astro';
                         <p class="text-gray-600 mb-4">Recibe tu vehículo en la puerta de tu casa, listo para disfrutar.</p>
                         <ul class="space-y-3 text-gray-600">
                             <li class="flex items-start">
-                                <svg class="w-5 h-5 text-red-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg class="w-5 h-5 text-blue-700 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
                                 </svg>
                                 <span><strong>Entrega a domicilio</strong> en toda la península</span>
                             </li>
                             <li class="flex items-start">
-                                <svg class="w-5 h-5 text-red-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg class="w-5 h-5 text-blue-700 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                 </svg>
                                 <span>Revisión final pre-entrega de 50 puntos</span>
                             </li>
                             <li class="flex items-start">
-                                <svg class="w-5 h-5 text-red-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg class="w-5 h-5 text-blue-700 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"></path>
                                 </svg>
                                 <span>Entrega de llaves y documentación completa</span>
@@ -474,11 +473,160 @@ import Footer from '../components/layout/Footer.astro';
     </div>
 </section>
 
-<script src="//unpkg.com/alpinejs" defer></script>
 
+<!-- Sección de Recambios -->
+<section id="recambios" class="py-20 bg-gradient-to-br from-slate-50 to-gray-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+        Nuestros <span class="text-red-700">Recambios</span> y <span class="text-red-700">Accesorios</span>
+      </h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        Amplio catálogo de recambios y accesorios 4x4 de primera calidad. Todo lo que necesitas para mantener tu vehículo en perfecto estado.
+      </p>
+    </div>
+    
+    <!-- Grid de tarjetas -->
+     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+      
+      <!-- Llantas -->
+      <RecambioCard
+        imagen="/images/iconos/ruedas.webp"
+        titulo="Llantas"
+        descripcion={[
+          "Llantas de acero",
+          "Llantas de aluminio",
+          "Tuercas y tornillería",
+          "Aletines y extensiones",
+          "Antirrobo"
+        ]}
+      />
 
+      <!-- Amortiguadores -->
+      <RecambioCard
+        imagen="/images/iconos/amortiguador.webp"
+        titulo="Amortiguadores"
+        descripcion={[
+          "Amortiguadores y suspensiones",
+          "Primeras marcas",
+          "OME",
+          "Bilstein",
+          "Ironman4x4"
+        ]}
+      />
 
+<!-- Bacas y Portaequipajes -->
+<RecambioCard
+  imagen="/images/iconos/baca.webp"
+  titulo="Bacas y Portaequipajes"
+  descripcion={[
+    "Bacas de techo universales",
+    "Barras longitudinales",
+    "Cestas de techo",
+    "Soportes para kayaks",
+    "Portabicicletas"
+  ]}
+/>
 
+<!-- Cabestrantes y Winches -->
+<RecambioCard
+  imagen="/images/iconos/cabestrante.webp"
+  titulo="Cabestrantes y Winches"
+  descripcion={[
+    "Winches eléctricos e hidráulicos",
+    "Capacidades 4000-12000 lbs",
+    "Cables sintéticos y de acero",
+    "Placas de anclaje",
+    "Accesorios de recuperación"
+  ]}
+/>
+
+<!-- Accesorios Camper y Aventura -->
+<RecambioCard
+  imagen="/images/iconos/camper.webp"
+  titulo="Accesorios Camper"
+  descripcion={[
+    "Tiendas de campaña techo",
+    "Toldos y awning",
+    "Neveras portátiles",
+    "Mobiliario camping",
+    "Sistemas de dormir"
+  ]}
+/>
+
+<!-- Sistemas de Iluminación -->
+<RecambioCard
+  imagen="/images/iconos/luces.webp"
+  titulo="Iluminación LED"
+  descripcion={[
+    "Barras LED 20-50 pulgadas",
+    "Focos cuadrados y redondos",
+    "Luces de trabajo",
+    "Balizas y warning",
+    "Kit de instalación"
+  ]}
+/>
+
+<!-- Separadores y Anchos de Vía -->
+<RecambioCard
+  imagen="/images/iconos/separadores.webp"
+  titulo="Separadores y Anchos"
+  descripcion={[
+    "Separadores de rueda",
+    "Espaciadores de llanta",
+    "Kit de ampliación vía",
+    "Tuercas de seguridad",
+    "Estudios de prolongación"
+  ]}
+/>
+
+<!-- Snorkel y Respiraderos -->
+<RecambioCard
+  imagen="/images/iconos/snorquel.webp"
+  titulo="Snorkel y Respiraderos"
+  descripcion={[
+    "Snorkels para vadeo",
+    "Kit respiradero diferenciales",
+    "Filtros de aire elevados",
+    "Tomas de aire safari",
+    "Sistemas de ventilación"
+  ]}
+/>
+
+    </div>
+
+    <!-- CTA inferior -->
+    <div class="text-center mt-16">
+      <div class="bg-gradient-to-r from-red-800 to-slate-800 rounded-2xl p-8 lg:p-12 text-white shadow-2xl">
+        <h3 class="text-2xl lg:text-3xl font-bold mb-4">Accesorios y Recambios al mejor precio</h3>
+        <p class="text-red-100 text-lg mb-6 max-w-2xl mx-auto">
+          Contamos con acceso a más de 50.000 referencias. Consúltanos cualquier recambio específico para tu vehículo.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="tel:+34682290381" class="bg-white text-red-700 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-colors shadow-lg">
+            <svg class="w-5 h-5 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+            </svg>
+            Llama Ahora
+          </a>
+          <a href="#contacto" class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-red-700 transition-colors">
+            Solicitar Información
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección de Contacto -->
+<section id="contacto" class="py-20 bg-gradient-to-br from-slate-900 to-gray-900 text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <ContactForm 
+      title="Contacta con Nuestros Expertos 4x4"
+      subtitle="¿Tienes dudas sobre recambios, necesitas un presupuesto o quieres información sobre importación de vehículos? Estamos aquí para ayudarte."
+    />
+  </div>
+</section>
 
     <script src="//unpkg.com/alpinejs" defer></script>
 

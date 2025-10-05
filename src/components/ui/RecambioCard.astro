@@ -1,0 +1,43 @@
+---
+// src/components/RecambioCard.astro
+export interface Props {
+  imagen: string;
+  titulo: string;
+  descripcion: string[];
+}
+
+const { imagen, titulo, descripcion } = Astro.props;
+---
+
+<div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-red-200 overflow-hidden flex flex-col h-full">
+  <!-- Icono -->
+  <div class="w-20 h-20 bg-gradient-to-br from-red-700 to-red-800 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform duration-300">
+  <img 
+    src={imagen} 
+    alt={titulo}
+    width={56}
+    height={56}
+    class="w-14 h-14 object-contain filter brightness-0 invert"
+    loading="lazy"
+  />
+</div>
+
+  <!-- Contenido -->
+  <div class="p-6 pt-0 flex-grow flex flex-col">
+    <h3 class="text-xl font-bold text-gray-900 mb-4 text-center group-hover:text-red-700 transition-colors">
+      {titulo}
+    </h3>
+    
+    <!-- Lista de elementos -->
+    <ul class="space-y-2 flex-grow">
+      {descripcion.map((item, index) => (
+        <li class="flex items-start">
+          <svg class="w-4 h-4 text-red-600 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+          <span class="text-gray-600 text-sm leading-relaxed">{item}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+</div>
