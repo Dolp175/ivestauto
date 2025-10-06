@@ -34,7 +34,10 @@ import MobileNavigation from './MobileNavigation.astro';
 
       <!-- Navegación escritorio - se oculta en xl (1280px) -->
       <div class="hidden xl:flex items-center space-x-4 2xl:space-x-6">
-        <Navigation />
+  <!-- separa el menú del logo -->
+  <div class="ml-8 2xl:ml-16">
+    <Navigation />
+  </div>
         
         <!-- Contacto teléfono -->
         <a 
